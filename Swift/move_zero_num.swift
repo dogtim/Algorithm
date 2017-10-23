@@ -21,8 +21,6 @@ func moveZeroNumToRight(_ nums : inout [Int]) {
         if(nums[currentIndex] == 0) {
             nums[currentIndex] = nums[index]
             nums[index] = 0
-            print("currentIndex \(currentIndex)")
-            print("index \(index)")
             index = index - 1
         }
         currentIndex = currentIndex - 1
@@ -32,7 +30,7 @@ func moveZeroNumToRight(_ nums : inout [Int]) {
     for value in nums {
         print("\(value) ", terminator:"")
     }
-    // 11 3 5 15 9 0 0 0 
+    // 11 3 5 15 9 0 0 0
     print("\n")
 }
 
